@@ -1,0 +1,15 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Bakso Goreng",
+    "price": 5000,
+    "pieces": 10,
+    "exp_date": ""
+}
+
+### 
+DELETE http://localhost:3000/products/663b3fb3367b2d15f2e24b60
