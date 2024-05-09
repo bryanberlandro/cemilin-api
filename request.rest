@@ -47,4 +47,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/buyers/663c782722e862be56c3248f
+DELETE http://localhost:3000/buyers/663c788874f06ca8aa1a36b6
