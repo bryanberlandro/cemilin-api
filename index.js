@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import prodRouter from './routes/productsRoutes.js';
+import router from './routes/index.js';
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(cors(
 ))
 
 app.use(express.json())
-app.use(prodRouter)
+app.use(router)
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`Connected to port http://localhost:${PORT}`))

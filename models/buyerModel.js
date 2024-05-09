@@ -5,6 +5,10 @@ const Buyer = mongoose.Schema({
         type: String,
         required: true
     },
+    itemName: {
+        type: String,
+        required: true
+    },
     totalItems: {
         type: Number,
         required: true

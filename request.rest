@@ -13,3 +13,38 @@ Content-Type: application/json
 
 ### 
 DELETE http://localhost:3000/products/663b3fb3367b2d15f2e24b60
+
+###
+GET http://localhost:3000/buyers
+
+###
+GET http://localhost:3000/buyers/663c788874f06ca8aa1a36b6
+
+###
+POST http://localhost:3000/buyers
+Content-Type: application/json
+
+{
+    "name": "Berto",
+    "itemName": "Cireng",
+    "totalItems": 5,
+    "totalPricePaid": 13000,
+    "totalChange": 0,
+    "purchaseDate": "2024-05-09"
+}
+
+###
+PATCH http://localhost:3000/buyers/663c788874f06ca8aa1a36b6
+Content-Type: application/json
+
+{
+    "name": "Berton Petro",
+    "itemName": "Cireng",
+    "totalItems": 5,
+    "totalPricePaid": 13000,
+    "totalChange": 0,
+    "purchaseDate": "2024-05-09"
+}
+
+###
+DELETE http://localhost:3000/buyers/663c782722e862be56c3248f
