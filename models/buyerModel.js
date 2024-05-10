@@ -17,10 +17,10 @@ const Buyer = mongoose.Schema({
         type: Number,
         required: false
     },
-    optionPrice: {
-        type: Number,
-        required: false
-    }, 
+    status: {
+        type: String,
+        required: true
+    },
     totalPricePaid: {
         type: Number,
         required: true
