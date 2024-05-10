@@ -13,6 +13,10 @@ const Buyer = mongoose.Schema({
         type: Number,
         required: true
     },
+    totalPrice: {
+        type: Number,
+        required: true
+    },
     totalPricePaid: {
         type: Number,
         required: true
@@ -23,7 +27,7 @@ const Buyer = mongoose.Schema({
     },
     purchaseDate: {
         type: Date,
-        default: Date.now()
+        required: true
     }
 })
 

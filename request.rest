@@ -11,6 +11,17 @@ Content-Type: application/json
     "exp_date": ""
 }
 
+###
+PATCH http://localhost:3000/products/663b3f3fab6acf0390fcef07
+Content-Type: application/json
+
+{
+    "name": "Cireng isi Ayam Suwir",
+    "price": 3000,
+    "pieces": 10,
+    "exp_date": ""
+}
+
 ### 
 DELETE http://localhost:3000/products/663b3fb3367b2d15f2e24b60
 
