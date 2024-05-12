@@ -1,18 +1,17 @@
 import mongoose from "../utils/db.js";
 
+const ProductSchema = mongoose.Schema({
+    name: String,
+    quantity: Number,
+    price: Number
+});
+
 const Buyer = mongoose.Schema({
     name: {
         type: String,
         required: true
     },
-    itemName: {
-        type: String,
-        required: true
-    },
-    totalItems: {
-        type: Number,
-        required: true
-    },
+    products: [ProductSchema],
     totalPrice: {
         type: Number,
         required: false

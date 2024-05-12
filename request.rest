@@ -5,7 +5,8 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "Bakso Goreng",
+    "name": "Maklorr",
+    "image": "/img/maklor.webp",
     "price": 5000,
     "pieces": 10,
     "exp_date": ""
@@ -23,7 +24,7 @@ Content-Type: application/json
 }
 
 ### 
-DELETE http://localhost:3000/products/663b3fb3367b2d15f2e24b60
+DELETE http://localhost:3000/products/663b3f74ab6acf0390fcef0b
 
 ###
 GET http://localhost:3000/buyers
