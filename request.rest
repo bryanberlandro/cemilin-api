@@ -38,8 +38,11 @@ Content-Type: application/json
 
 {
     "name": "Berto",
-    "itemName": "Cireng",
-    "totalItems": 5,
+    "products": [
+        { "name": "Cireng", "quantity": 2, "price": 5000 },
+    ],
+    "totalPrice": 10000,
+    "status": "completed",
     "totalPricePaid": 13000,
     "totalChange": 0,
     "purchaseDate": "2024-05-09"

@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import prodRouter from './routes/productsRoutes.js';
 import router from './routes/index.js';
+import bodyParser from 'body-parser';
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(cors(
     }
 ))
 
+app.use(bodyParser.json())
 app.use(express.json())
 app.use(router)
 const PORT = process.env.PORT || 3000

@@ -3,7 +3,8 @@ import mongoose from "../utils/db.js";
 const ProductSchema = mongoose.Schema({
     name: String,
     quantity: Number,
-    price: Number
+    price: Number,
+    image: String
 });
 
 const Buyer = mongoose.Schema({
